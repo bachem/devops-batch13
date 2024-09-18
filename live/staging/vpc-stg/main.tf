@@ -1,8 +1,12 @@
+provider "aws" {
+  region = "ap-southeast-3"
+}
+
 module "vpc" {
   #source = "terraform-aws-modules/vpc/aws"
   source = "../../../provisioning/tf-aws-modules/vpc/"
 
-  name = "stg-vpc-b13"
+  name = "dev-vpc-b13"
   cidr = "10.0.0.0/16"
 
   azs             = ["ap-southeast-3a","ap-southeast-3b"]

@@ -1,9 +1,6 @@
 # devops-batch13
-devops-batch13
+Git untuk keperluan belajar DevOps bootcamp Batch13
 
-git config --global user.email
-git config --global user.name "triadi80"
-git config --global user.email "triadi80@gmail.com"
-
+-Konfigurasi git
 git config --global user.name
 git config --global user.email
