@@ -4,7 +4,7 @@ provider "aws" {
 
 module "vpc" {
   #source = "terraform-aws-modules/vpc/aws"
-  source = "../../../provisioning/tf-aws-modules/vpc/"
+  source = "../../../tf-aws-modules/vpc"
 
   name = "dev-vpc-b13"
   cidr = "10.0.0.0/16"
