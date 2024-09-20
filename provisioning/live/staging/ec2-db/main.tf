@@ -18,7 +18,7 @@ module "ec2_instance" {
   #source  = "terraform-aws-modules/ec2-instance/aws"
   source = "../../../tf-aws-modules/ec2"
 
-  name = "dob13-jump"
+  name = "dob13-wp-db"
 
   #ami                    = "ami-06a2e6561950f5040"
   ami                    = data.aws_ami.ubuntu.id
@@ -26,7 +26,7 @@ module "ec2_instance" {
   key_name               = "triadip-aws"
   monitoring             = true
   vpc_security_group_ids = ["sg-0f06a3783e47640ba"]
-  subnet_id              = "subnet-03d018fdd608a8af5"
+  subnet_id              = "subnet-05deef994cb1ef6d5"
 
   root_block_device = [{
     volume_type           = "gp3" # General Purpose SSD
