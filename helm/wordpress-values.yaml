@@ -1,0 +1,18 @@
+mariadb:
+  enabled: false
+
+externalDatabase:
+  host: 10.0.1.54
+  user: admindb
+  password: Terea@2024!
+  database: wordpress_db
+  port: 3306
+
+ingress:
+  enabled: true
+  hostname: wpb13.arkanoit.net
+  tls: true
+  annotations:
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+  extraHosts: []
+  extraTls: []

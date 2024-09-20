@@ -28,6 +28,8 @@ module "ec2_instance" {
   vpc_security_group_ids = ["sg-0f06a3783e47640ba"]
   subnet_id              = "subnet-03d018fdd608a8af5"
 
+  associate_public_ip_address = true
+
   root_block_device = [{
     volume_type           = "gp3" # General Purpose SSD
     volume_size           = 30    # 30GB disk size
