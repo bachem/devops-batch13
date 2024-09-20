@@ -4,7 +4,7 @@ mariadb:
 externalDatabase:
   host: 10.0.1.54
   user: admindb
-  password: Terea@2024!
+  password: Rahasiaku-2024
   database: wordpress_db
   port: 3306
 
